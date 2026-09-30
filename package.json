@@ -1,0 +1,40 @@
+{
+  "name": "siteweb",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/leaflet": "^1.9.21",
+    "clsx": "^2.1.1",
+    "cobe": "^0.6.3",
+    "framer-motion": "^12.43.0",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.27.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-leaflet": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.5.4",
+    "oxlint": "^1.71.0",
+    "playwright": "^1.63.0",
+    "postcss": "^8.5.25",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~6.0.2",
+    "vite": "^5.4.21"
+  },
+  "optionalDependencies": {
+    "@rolldown/binding-darwin-arm64": "^1.2.1"
+  }
+}
