@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode RGB values */
+    --color-taupe-dark-rgb: 61 52 44;
+    --color-taupe-main-rgb: 115 100 86;
+    --color-taupe-medium-rgb: 149 132 116;
+    --color-taupe-light-rgb: 196 185 173;
+    --color-taupe-bg-rgb: 245 242 236;
+    --color-taupe-surface-rgb: 250 248 245;
+    --color-taupe-card-rgb: 255 255 255;
+    --color-accent-gold-rgb: 197 154 104;
+
+    /* Hex references */
+    --color-taupe-dark: #3D342C;
+    --color-taupe-main: #736456;
+    --color-taupe-medium: #958474;
+    --color-taupe-light: #C4B9AD;
+    --color-taupe-bg: #F5F2EC;
+    --color-taupe-surface: #FAF8F5;
+    --color-taupe-card: #FFFFFF;
+    --color-accent-gold: #C59A68;
+
+    --font-heading: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  html.dark {
+    /* Dark Mode RGB values (Luxury obsidian & warm stone) */
+    --color-taupe-dark-rgb: 245 242 236; /* Text is light warm ivory */
+    --color-taupe-main-rgb: 214 204 194;
+    --color-taupe-medium-rgb: 168 159 145;
+    --color-taupe-light-rgb: 60 54 48;
+    --color-taupe-bg-rgb: 18 17 16; /* Deep obsidian background */
+    --color-taupe-surface-rgb: 27 25 23; /* Dark refined charcoal/stone */
+    --color-taupe-card-rgb: 33 30 27; /* Rich dark card background */
+    --color-accent-gold-rgb: 212 175 55; /* Shimmering gold #D4AF37 */
+
+    /* Hex references */
+    --color-taupe-dark: #F5F2EC;
+    --color-taupe-main: #D6CCC2;
+    --color-taupe-medium: #A89F91;
+    --color-taupe-light: #3C3630;
+    --color-taupe-bg: #121110;
+    --color-taupe-surface: #1B1917;
+    --color-taupe-card: #211E1B;
+    --color-accent-gold: #D4AF37;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+    font-family: var(--font-body);
+    background-color: var(--color-taupe-bg);
+    color: var(--color-taupe-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body {
+    width: 100%;
+    position: relative;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    background-color: var(--color-taupe-bg);
+    color: var(--color-taupe-dark);
+  }
+
+  img {
+    content-visibility: auto;
+  }
+}
+
+/* GPU Acceleration & Performance Utilities */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(196, 185, 173, 0.35);
+}
+
+html.dark .glass-panel {
+  background: rgba(27, 25, 23, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-soft {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-hover {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, box-shadow;
+}
+.shadow-hover:hover {
+  transform: translateY(-4px) translateZ(0);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-taupe-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-taupe-medium);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-taupe-main);
+}
+
+/* Dark Mode Contrast Protections */
+html.dark .bg-taupe-dark {
+  background-color: #1a1715 !important;
+}
+
+html.dark [class*="bg-taupe-dark/"] {
+  background-color: rgba(26, 23, 21, 0.88) !important;
+}

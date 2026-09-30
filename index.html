@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Theme Script to prevent flash -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('faar_theme');
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          }
+        } catch(e) {}
+      })();
+    </script>
+    
+    <!-- Primary Meta Tags -->
+    <title>FAAR Agencement | Cuisine, Dressing & Ré-stratification de Portes à Plouvain</title>
+    <meta name="title" content="FAAR Agencement | Cuisine, Dressing & Ré-stratification de Portes à Plouvain" />
+    <meta name="description" content="Artisan agenceur d'intérieur à Plouvain. Spécialiste en cuisines sur-mesure, dressings, salles de bain et ré-stratification de portes intérieures. Devis gratuit au 06 45 15 87 43." />
+    <meta name="keywords" content="FAAR Agencement, agencement intérieur, cuisine sur mesure, dressing, salle de bain, ré-stratification portes, Plouvain, Arras, Douai, menuiserie, rénovation portes" />
+    <meta name="author" content="FAAR Agencement" />
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://faaragencement.fr/" />
+    <meta property="og:title" content="FAAR Agencement | Cuisine, Dressing & Agencement Sur-Mesure à Plouvain" />
+    <meta property="og:description" content="Artisan agenceur à Plouvain (Pas-de-Calais). Création de cuisines sur-mesure, dressings, aménagement d'escalier et mobilier. Devis gratuit." />
+    <meta property="og:image" content="/images/Camion.jpg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FAAR Agencement | Agencement Sur-Mesure à Plouvain" />
+    <meta name="twitter:description" content="Cuisines sur-mesure, meuble et agencement dans le Pas-de-Calais." />
+    <meta name="twitter:image" content="/images/Camion.jpg" />
+
+    <!-- Google Structured Data (JSON-LD) for LocalBusiness & Google Images -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeGoodsStore",
+      "name": "FAAR Agencement",
+      "image": [
+        "https://faaragencement.fr/images/Camion.jpg",
+        "https://faaragencement.fr/images/Cuisine.jpg",
+        "https://faaragencement.fr/images/Cuisine2.jpg",
+        "https://faaragencement.fr/images/Escalier.jpg",
+        "https://faaragencement.fr/images/Meuble.jpg",
+        "https://faaragencement.fr/images/Mure.jpg",
+        "https://faaragencement.fr/images/Facade.jpg"
+      ],
+      "@id": "https://faaragencement.fr/#organization",
+      "url": "https://faaragencement.fr",
+      "telephone": "+33645158743",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plouvain",
+        "addressLocality": "Plouvain",
+        "postalCode": "62118",
+        "addressRegion": "Pas-de-Calais",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.2994,
+        "longitude": 2.9231
+      },
+      "areaServed": [
+        "Plouvain",
+        "Arras",
+        "Douai",
+        "Lens",
+        "Hénin-Beaumont",
+        "Vitry-en-Artois",
+        "Pas-de-Calais",
+        "Nord"
+      ],
+      "description": "FAAR Agencement est votre artisan menuisier et agenceur d'intérieur spécialisé en cuisines sur-mesure, dressings, agencement d'escalier et mobilier à Plouvain et dans les Hauts-de-France.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "8"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="antialiased font-body bg-taupe-bg text-taupe-dark selection:bg-accent-gold/30 selection:text-taupe-dark">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
