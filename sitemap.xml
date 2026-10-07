@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://faaragencement.fr/</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://faaragencement.fr/images/Camion.jpg</image:loc>
+      <image:title>FAAR Agencement - Camion d'intervention artisan menuisier à Plouvain</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://faaragencement.fr/images/Cuisine.jpg</image:loc>
+      <image:title>FAAR Agencement - Cuisine sur-mesure aménagée Plouvain</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://faaragencement.fr/images/Cuisine2.jpg</image:loc>
+      <image:title>FAAR Agencement - Rénovation de cuisine et plan de travail Arras</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://faaragencement.fr/images/Escalier.jpg</image:loc>
+      <image:title>FAAR Agencement - Habillage et agencement d'escalier sur-mesure Douai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://faaragencement.fr/images/Meuble.jpg</image:loc>
+      <image:title>FAAR Agencement - Meuble de rangement et dressing sur-mesure</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://faaragencement.fr/images/Mure.jpg</image:loc>
+      <image:title>FAAR Agencement - Cloison et parement mural intérieur Lens</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://faaragencement.fr/images/Facade.jpg</image:loc>
+      <image:title>FAAR Agencement - Agencement extérieur et rénovation de devanture Pas-de-Calais</image:title>
+    </image:image>
+  </url>
+</urlset>
